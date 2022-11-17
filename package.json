@@ -1,7 +1,7 @@
 {
 	"name": "animated-octo-funicular",
 	"version": "0.0.1",
-	"description": "This is an R&D project to investigate UX, DX and performance benefits of using Web Components.",
+	"description": "This is an R&D project to investigate UX, DX and performance benefits of using Web Components",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,12 @@
 	},
 	"homepage": "https://github.com/rebyatyonok/animated-octo-funicular#readme",
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.43.0",
+		"@typescript-eslint/parser": "^5.43.0",
+		"eslint": "^8.27.0",
+		"eslint-plugin-turbo": "^0.0.4",
+		"eslint-plugin-unicorn": "^44.0.2",
 		"typescript": "^4.9.3"
-	}
+	},
+	"dependencies": {}
 }
