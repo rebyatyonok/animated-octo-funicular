@@ -1,0 +1,19 @@
+{
+	"name": "animated-octo-funicular",
+	"version": "0.0.1",
+	"description": "This is an R&D project to investigate UX, DX and performance benefits of using Web Components.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rebyatyonok/animated-octo-funicular.git"
+	},
+	"author": "Ivan Petrakov <rebyatyonok@ya.ru>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rebyatyonok/animated-octo-funicular/issues"
+	},
+	"homepage": "https://github.com/rebyatyonok/animated-octo-funicular#readme"
+}
