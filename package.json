@@ -15,5 +15,8 @@
 	"bugs": {
 		"url": "https://github.com/rebyatyonok/animated-octo-funicular/issues"
 	},
-	"homepage": "https://github.com/rebyatyonok/animated-octo-funicular#readme"
+	"homepage": "https://github.com/rebyatyonok/animated-octo-funicular#readme",
+	"devDependencies": {
+		"typescript": "^4.9.3"
+	}
 }
