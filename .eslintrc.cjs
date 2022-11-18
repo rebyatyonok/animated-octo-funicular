@@ -1,16 +1,15 @@
 module.exports = {
-	parser: "@typescript-eslint/parser", // Specifies the ESLint parser
+	parser: "@typescript-eslint/parser",
 	plugins: ["unicorn", "turbo"],
-	extends: [
-		"plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-	],
+	extends: ["eslint:recommended", "plugin:@typescript-eslint/strict"],
 	parserOptions: {
-		ecmaVersion: "latest", // Allows for the parsing of modern ECMAScript features
-		sourceType: "module", // Allows for the use of import
-		project: "./tsconfig.eslint.json", // Allows for the use of rules which require parserServices to be generated
+		ecmaVersion: "latest",
+		sourceType: "module",
+		project: "./tsconfig.eslint.json",
 	},
 	rules: {
-		// Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+		"no-extra-semi": "error",
+		"no-multiple-empty-lines": ["warn", { "max": 1 }],
 		"@typescript-eslint/explicit-function-return-type": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"@typescript-eslint/no-unused-vars": "off",
@@ -18,8 +17,11 @@ module.exports = {
 		"unicorn/filename-case": [
 			"error",
 			{
-				case: "camelCase",
+				case: "kebabCase"
 			},
 		]
 	},
+	"env": {
+		"node": "true"
+	}
 };
