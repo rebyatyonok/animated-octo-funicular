@@ -1,0 +1,23 @@
+/* :root {
+	--white: hsl(0, 0%, 100%);
+	--dark-sienna: hsl(349, 48%, 9%);
+	--minion-yellow: hsl(52, 100%, 65%);
+	--fairy-rose: hsl(356, 100%, 67%);
+	--lapis-lazuli: hsl(211, 43%, 38%);
+	--blue-jeans: hsl(206, 100%, 60%);
+	--emerald: hsl(145, 82%, 44%);
+
+	--success: var(--emerald);
+	--warning: var(--minion-yellow);
+	--danger: var(--fairy-rose);
+	--accent: var(--blue-jeans);
+	--main: var(--lapis-lazuli);
+	--light: var(--white);
+	--dark: var(--dark-sienna);
+} */
+
+html, body {
+	height: 100%;
+	background-color: var(--light-darken);
+}
+
