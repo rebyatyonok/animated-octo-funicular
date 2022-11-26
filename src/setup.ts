@@ -9,10 +9,10 @@ function HSLToString(value: HSLColor) {
 }
 
 function changeLightness(value: HSLColor, amount: number): HSLColor {
-	const [h, s, l] = value;
+	const [h, s, l] = value
 
 	// 0 <= totalL <= 100
-	const totalL = l + amount > 100 ? 100 : l + amount < 0 ? 0 : amount
+	const totalL = l + amount > 100 ? 100 : l + amount < 0 ? 0 : l + amount
 
 	return [h, s, totalL]
 }
