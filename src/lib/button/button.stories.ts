@@ -1,14 +1,25 @@
 import { html } from 'lit';
-// import { Meta } from '@storybook/web-components';
+import { Meta } from '@storybook/web-components';
 
 import './index';
 
-// More on default export: https://storybook.js.org/docs/web-components/writing-stories/introduction#default-export
-export default {
+const meta: Meta = {
   title: 'Button',
 	component: 'octo-button',
 }
 
-export const Default = () => html`<octo-button></octo-button>`;
+export default meta;
 
-export const NotDefault = () => html`<octo-button name="Storybook"></octo-button>`;
+export const Default = () => html`
+	<octo-button>
+		<span slot="prefix">∆</span>
+		button
+		<span slot="postfix">©</span>
+	</octo-button>
+`;
+
+export const NotDefault = () => html`
+	<octo-button>
+		Button
+	</octo-button>
+`;
